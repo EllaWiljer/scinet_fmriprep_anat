@@ -11,7 +11,7 @@ module load singularity
 module load gnu-parallel/20180322
 
 dataset="HBN"
-export freesufer_license=$HOME/.licenses/freesurfer/license.txt
+export freesufer_license=$SCRATCH/freesurfer_license.txt
 
 ## build the mounts
 sing_home=$SCRATCH/sing_home/fmriprep
