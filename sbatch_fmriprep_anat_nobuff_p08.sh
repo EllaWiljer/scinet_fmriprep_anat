@@ -10,7 +10,7 @@ cd $SLURM_SUBMIT_DIR
 module load singularity
 module load gnu-parallel/20180322
 
-dataset="HBN"
+dataset="HBN_test"
 export freesufer_license=$SCRATCH/freesurfer_license.txt
 
 ## build the mounts
@@ -23,7 +23,7 @@ mkdir -p ${sing_home} ${outdir} ${workdir}
 ## acutally running the tasks (note we are using gnu-parallel to run across participants)
 parallel -j 8 "singularity run \
   -H ${sing_home} \
-  -B $SCRATCH/${dataset}:/bids \
+  -B $SCRATCH/HBN/${dataset}:/bids \
   -B ${outdir}:/output \
   -B ${freesufer_license}:/freesurfer_license.txt \
   -B ${workdir}:/workdir \
