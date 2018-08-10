@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=80
+#SBATCH --cpus-per-task=10
 #SBATCH --time=11:00:00
 #SBATCH --job-name fmriprep112_p08
 #SBATCH --output=fmriprep112_p08_%j.txt
@@ -35,5 +35,6 @@ parallel -j 8 "singularity run \
       --omp-nthreads 10 \
       --output-space T1w template \
       --work-dir /workdir \
+      --debug \
       --notrack --fs-license-file /freesurfer_license.txt" \
-:::"sub-NDARBG702FED" "sub-NDARAV945MCQ" "sub-NDARBN100LCD" "sub-NDARCA789EE0" "sub-NDARAV894XWD" "sub-NDARDX770PJK" "sub-NDAREK947FYP" "sub-NDARDJ825GBP"
+::: "sub-NDARBG702FED" "sub-NDARAV945MCQ" "sub-NDARBN100LCD" "sub-NDARCA789EE0" "sub-NDARAV894XWD" "sub-NDARDX770PJK" "sub-NDAREK947FYP" "sub-NDARDJ825GBP"
