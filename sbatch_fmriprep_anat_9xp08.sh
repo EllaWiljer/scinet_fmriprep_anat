@@ -36,4 +36,4 @@ parallel -j 8 "singularity run \
       --output-space T1w template \
       --work-dir /workdir \
       --notrack --fs-license-file /freesurfer_license.txt" \
-:::"sub-NDARCP360AFD" "sub-NDARDB804YHE" "sub-NDARBC580HR5" "sub-NDARFT834NT1" "sub-NDARFA464HJQ" "sub-NDARBA507GCT" "sub-NDAREE196FEG" "sub-NDAREF057VX5"
+::: "sub-NDARCP360AFD" "sub-NDARDB804YHE" "sub-NDARBC580HR5" "sub-NDARFT834NT1" "sub-NDARFA464HJQ" "sub-NDARBA507GCT" "sub-NDAREE196FEG" "sub-NDAREF057VX5"

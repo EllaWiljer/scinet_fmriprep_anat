@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=80
+#SBATCH --cpus-per-task=80ls
 #SBATCH --time=11:00:00
 #SBATCH --job-name fmriprep112_p08
 #SBATCH --output=fmriprep112_p08_%j.txt
