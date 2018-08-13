@@ -17,7 +17,7 @@ export ciftify_container=/scinet/course/ss2018/3_bm/2_imageanalysis/singularity_
 ## build the mounts
 sing_home=$SCRATCH/sing_home/ciftify
 outdir=$SCRATCH/bids_outputs/${dataset}/fmriprep_p08
-workdir=$BBUFFER/${dataset}
+workdir=$SCRATCH/work/${dataset}/fmriprep_08
 
 mkdir -p ${sing_home} ${outdir} ${workdir}
 
@@ -30,7 +30,7 @@ parallel -j 8 "singularity run \
   -B ${bids_input}:/bids \
   -B ${outdir}:/output \
   -B ${freesufer_license}:/freesurfer_license.txt \
-  -B ${BBUFFER}:/workdir \
+  -B ${workdir}:/workdir \
   ${ciftify_container} \
       /bids /output participant \
       --participant_label={} \
