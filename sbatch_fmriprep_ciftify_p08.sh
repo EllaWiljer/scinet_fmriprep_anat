@@ -16,8 +16,8 @@ export freesufer_license=$SCRATCH/freesurfer_license.txt
 export ciftify_container=/scinet/course/ss2018/3_bm/2_imageanalysis/singularity_containers/tigrlab_fmriprep_ciftify_1.1.2-2.0.9-2018-07-31-d0ccd31e74c5.img
 ## build the mounts
 sing_home=$SCRATCH/sing_home/ciftify
-outdir=$SCRATCH/bids_outputs/${dataset}/fmriprep_p08
-workdir=$SCRATCH/work/${dataset}/fmriprep_08
+outdir=$SCRATCH/bids_outputs/${dataset}/fmriprep112_p08
+workdir=$SCRATCH/work/${dataset}/fmriprep112_08
 
 mkdir -p ${sing_home} ${outdir} ${workdir}
 
