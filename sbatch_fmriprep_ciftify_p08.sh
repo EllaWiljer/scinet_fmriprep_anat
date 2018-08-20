@@ -17,7 +17,7 @@ export ciftify_container=/scinet/course/ss2018/3_bm/2_imageanalysis/singularity_
 ## build the mounts
 sing_home=$SCRATCH/sing_home/ciftify
 outdir=$SCRATCH/bids_outputs/${dataset}/fmriprep112_p08
-workdir=$SCRATCH/work/${dataset}/fmriprep112_08
+workdir=$SCRATCH/work/${dataset}/fmriprep112_p08
 
 mkdir -p ${sing_home} ${outdir} ${workdir}
 
