@@ -38,4 +38,4 @@ parallel -j 8 "singularity run \
       --fs-license /freesurfer_license.txt \
       --n_cpus 10 \
       --fmriprep-args='--use-aroma'" \
-::: "sub-NDARAA075AMK" "sub-NDARAD481FXF" "sub-NDARAJ366ZFA" "sub-NDARAM277WZT" "sub-NDARAA536PTU" "sub-NDARAE199TDD" "sub-NDARAK187ZLP" "sub-NDARAR025WX4"
+::: "NDARAA075AMK" "NDARAD481FXF" "NDARAJ366ZFA" "NDARAM277WZT" "NDARAA536PTU" "NDARAE199TDD" "NDARAK187ZLP" "NDARAR025WX4"
