@@ -5,9 +5,9 @@
 #SBATCH --job-name fmriprep112_q08
 #SBATCH --output=fmriprep112_q08_%j.txt
 
-cd $SLURM_SUBMIT_DIR
+
 #source ${HOME}/code/bids-on-scinet/env/source_qbatch_python_env.sh
-module load singularity
+
 module load gnu-parallel/20180322
 
 ## change this to the name of your dataset
