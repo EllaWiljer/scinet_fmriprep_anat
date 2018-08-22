@@ -6,8 +6,8 @@
 #SBATCH --output=fmriprep112_q08_%j.txt
 
 
-#source ${HOME}/code/bids-on-scinet/env/source_qbatch_python_env.sh
-
+source ${HOME}/code/bids-on-scinet/env/source_qbatch_python_env.sh
+module load singularity
 module load gnu-parallel/20180322
 
 ## change this to the name of your dataset
