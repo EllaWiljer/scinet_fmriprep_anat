@@ -5,7 +5,7 @@
 #SBATCH --job-name ciftify_p08
 #SBATCH --output=ciftify_p08_%j.txt
 
-
+source ${HOME}/code/bids-on-scinet/env/source_qbatch_python_env.sh
 module load singularity
 module load gnu-parallel/20180322
 
