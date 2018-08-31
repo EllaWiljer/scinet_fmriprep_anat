@@ -48,3 +48,4 @@ cd ${indir}; ls -1d sub* | sed 's/sub-//g' | \
        --workdir $sing_home \
        --jobname ${dataset}_fmriprep_anat \
 --env none --header "module load singularity gnu-parallel/20180322" \
+- 
